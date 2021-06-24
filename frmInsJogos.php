@@ -1,3 +1,8 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION['email']))
+      Header("location:index.php"); 
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,6 +21,17 @@
     <title>Inserir Jogo</title>
 </head>
 <body>
+    <nav class="grey black">
+    <div class="nav-wrapper">
+      <a href="menu.php" class="brand-logo center ">XGames</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="listarJogos.php">Jogos</a></li>
+        <li><a href="listarConsole.php">Consoles</a></li>
+        <li><a href="logout.php">Sair</a></li>
+      </ul>
+      <h7 class= "grey-text text-lighten-1" right>Logado: <?php echo $_SESSION['email'];?> <h7>
+    </div>
+  </nav>
     <div class="container grey lighten-2 col s12">
         <div class="grey darken-1 col s12">
             <h3>Adicionar Novo Jogo</h3>

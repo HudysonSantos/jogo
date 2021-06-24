@@ -34,6 +34,11 @@
       <h7 class= "grey-text text-lighten-1" right>Logado: <?php echo $_SESSION['email'];?> <h7>
     </div>
   </nav>
+  <br>
+  <div class = "container col m8 s8 center"><img src="imagens/forza.jpg">
+    <h4><font color="black" face="Verdana" size="5"><b>Forza Horizon 5 é anunciado na E3 com gráficos impressionantes, com previsão de
+    Lançamento para 9 de Novembro.</b></font></h4>
+  </div>
 </body>
 </html>
 
